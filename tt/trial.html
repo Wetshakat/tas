@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Budget</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .christmas-bg {
+            background-image: url('https://example.com/path-to-christmas-tree.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-6">
+        
+        <header class="header bg-red-500 text-white py-4 px-6 rounded">
+            <h1 class="text-2xl font-bold">My Christmas Budget</h1>
+        </header>
+
+        
+        <main class="mt-6 space-y-8">
+            
+            <section class="budget-section">
+                <div class="bg-green-50 p-6 rounded shadow">
+                    <h2 class="text-xl font-bold text-green-600">Welcome to BuD</h2>
+                    <div class="mt-4 space-y-2">
+                        <p>Total Budget: <span class="total-budget font-bold">N500,000</span></p>
+                        <p>Balance: <span class="balance font-bold">N500,000</span></p>
+                        <p class="exceeded text-red-500 font-medium hidden">Exceeded by: N0</p>
+                    </div>
+                    <div class="mt-4 space-x-4">
+                        <button class="add-budget bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Add Budget</button>
+                        <button class="update-budget bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Update Budget</button>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section class="budgeted-items">
+                <h3 class="text-lg font-semibold">Budgeted Items</h3>
+                <ul class="item-list space-y-2">
+                
+                </ul>
+            </section>
+
+            
+            <section class="history-section">
+                <h3 class="text-lg font-semibold">History</h3>
+                <ul class="history-list space-y-2">
+               
+                </ul>
+                <div class="total text-right mt-4">
+                    Total Spent: <span class="font-bold text-gray-900">N0</span>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
